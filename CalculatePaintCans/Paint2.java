@@ -1,0 +1,44 @@
+﻿// Alyssa Basile 10/24/2020
+// updated 07/15/2021
+// IT 140
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class Paint2 {
+    private static DecimalFormat df2 = new DecimalFormat("#.##");
+    public static void main(String[] args) {
+
+        Scanner scnr = new Scanner(System.in);
+        double wallHeight = 0.0;
+        double wallWidth = 0.0;
+        double wallArea = 0.0;
+        double gallonsPaintNeeded = 0.0;
+        double cansNeeded;
+
+        final double squareFeetPerGallons = 350.0;
+        final double gallonsPerCan = 1.0;
+
+        // Prompt user to input wall's height
+        System.out.println("Enter wall height (feet): ");
+        wallHeight = scnr.nextDouble();
+
+
+        // Prompt user to input wall's width
+	      System.out.println("");
+        System.out.println("Enter wall width (feet): ");
+        wallWidth = scnr.nextDouble();
+
+        // Calculate and output wall area
+        wallArea = wallHeight * wallWidth;
+        System.out.println("Wall area:  " + wallArea + " square feet");
+
+        // Calculate and output the amount of paint in gallons needed to paint the wall
+        gallonsPaintNeeded = wallArea / squareFeetPerGallons;
+        System.out.println("Paint needed: " + df2.format(gallonsPaintNeeded) + " gallons");
+
+        // Calculate and output the number of paint cans needed to paint the wall,
+        // rounded up to nearest integer
+        cansNeeded = Math.ceil(gallonsPaintNeeded);
+        System.out.println("Cans needed: " + cansNeeded + " can(s)");
+    }
+}
