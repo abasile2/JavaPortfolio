@@ -1,6 +1,6 @@
-﻿// Alyssa Basile 10/24/2020
+// Alyssa Basile 10/24/2020
 // updated 07/15/2021
-// IT 140
+
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
