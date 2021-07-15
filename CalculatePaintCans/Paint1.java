@@ -1,3 +1,6 @@
+// Alyssa Basile 10/23/2020
+// updated 07/15/2021
+
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
