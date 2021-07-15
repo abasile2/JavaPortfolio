@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.text.DecimalFormat;
 
 public class Paint2 {
-    private static DecimalFormat df2 = new DecimalFormat("#.##");
+    private static DecimalFormat df2 = new DecimalFormat("#.####");
     public static void main(String[] args) {
 
         Scanner scnr = new Scanner(System.in);
